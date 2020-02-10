@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main-div">
+    <div class="profile-images-div">
+        <!--        배경 이미지-->
+        <img src="../static/imgs/assets/profile-pic.png" style="width: inherit; height: 270px; position: absolute;"
+             class="background-img" id="background-img">
+        <!--        프로필 이미지-->
+        <img src="../static/imgs/assets/user-pic.png" style="position: relative; left: 5%; margin-top: 1rem;"
+             class="profile-img" id="profile-img">
+        <div class="content-wrap-box">
+            <div class="user-profile-text-box">
+                <div class="profile-header big-title">
+                    <h4>User name</h4>
+                </div>
+                <div class="profile-header">
+                    <p>description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

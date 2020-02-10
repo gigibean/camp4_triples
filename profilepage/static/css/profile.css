@@ -1,0 +1,51 @@
+.profile-header {
+    position: relative;
+}
+
+.user-profile-text-box {
+    position: relative;
+}
+
+@media screen and (max-width: 940px) {
+    .profile-images-div {
+        width: 80% !important;
+    }
+
+    .profile-img {
+        width: 150px !important;
+    }
+}
+
+.content-wrap-box {
+    position: absolute;
+    left: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 4;
+    padding: 30px;
+}
+
+.profile-images-div {
+    width: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 237px;
+}
+
+.user-profile-text-box {
+    display: inline-block;
+}
+
+.profile-header {
+    background-color: #222222;
+    color: #fff;
+}
+
+.big-title {
+    font-size: 36px !important;
+}
+
