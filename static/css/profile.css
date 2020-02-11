@@ -5,3 +5,73 @@
 .user-profile-text-box {
     position: relative;
 }
+
+@media screen and (max-width: 940px) {
+    .profile-images-div {
+        width: 100% !important;
+    }
+
+    .profile-img {
+        margin-top: 10% !important;
+        width: 180px !important;
+    }
+
+    .content-wrap-box {
+        padding-top: 15% !important;
+    }
+}
+
+.content-wrap-box {
+    position: absolute;
+    left: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+}
+
+.profile-images-div {
+    width: inherit;
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+}
+
+.profile-img {
+    width: 220px;
+}
+
+.user-profile-text-box {
+    display: inline-block;
+}
+
+.profile-header {
+    background-color: #222222;
+    color: #fff;
+}
+
+p {
+    padding: 6px;
+}
+
+.profile-header h4 {
+    font-size: 36px !important;
+    padding: 6px;
+}
+
+.edit-profile-img {
+    background-color: #fff;
+    color: #2D2D2D;
+    display: inline-block;
+    left: -45%;
+    top: 40%;
+    position: relative;
+}
+
+
+.profile-img-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}

@@ -8,11 +8,16 @@
 
 @media screen and (max-width: 940px) {
     .profile-images-div {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .profile-img {
-        width: 150px !important;
+        margin-top: 10% !important;
+        width: 180px !important;
+    }
+
+    .content-wrap-box {
+        padding-top: 15% !important;
     }
 }
 
@@ -22,7 +27,6 @@
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 4;
     padding: 30px;
 }
 
@@ -30,10 +34,11 @@
     width: inherit;
     position: relative;
     overflow: hidden;
+    height: 270px;
 }
 
 .profile-img {
-    width: 237px;
+    width: 220px;
 }
 
 .user-profile-text-box {
@@ -45,7 +50,28 @@
     color: #fff;
 }
 
-.big-title {
-    font-size: 36px !important;
+p {
+    padding: 6px;
 }
 
+.profile-header h4 {
+    font-size: 36px !important;
+    padding: 6px;
+}
+
+.edit-profile-img {
+    background-color: #fff;
+    color: #2D2D2D;
+    display: inline-block;
+    left: -45%;
+    top: 40%;
+    position: relative;
+}
+
+
+.profile-img-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}
