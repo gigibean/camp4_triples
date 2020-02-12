@@ -66,6 +66,7 @@ p {
     left: -45%;
     top: 40%;
     position: relative;
+    padding: 6px;
 }
 
 
@@ -74,4 +75,119 @@ p {
     top: 0;
     bottom: 0;
     padding: 20px;
+}
+
+.upload-header-image-div {
+    position: relative;
+    float: right;
+    display: inline-block;
+    background-color: #fff;
+    padding: 6px;
+    color: #2D2D2D;
+}
+
+/* vertical bar tabs */
+@media screen and (max-width: 940px) {
+    .vertical-bar {
+        display: grid !important;
+    }
+}
+
+.vertical-bar {
+    position: sticky;
+    /*z-index: 2;*/
+    /*display: ;*/
+}
+
+.user-info-bar {
+    position: relative;
+    padding-top: 15px;
+
+}
+
+.user-info-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    overflow-x: paged-x-controls;
+    line-height: 1.8;
+    height: 48px;
+}
+
+/*nav #nav-btn-1, #nav-btn-2, #nav-btn-3, #nav-btn-4, #nav-btn-5, #nav-btn-6, #nav-btn-7 {*/
+/*    float: left;*/
+/*}*/
+
+.user-info-bar li {
+    padding: 14px 10px;
+    float: left;
+}
+
+.vertical-bar-ul li a {
+    display: block;
+    color: #2D2D2D;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Cafe24Oneprettynight', serif;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.vertical-bar-ul li a:hover {
+    color: #9A9A9A !important;
+}
+
+/* user-info-bar-btn */
+.user-info-bar-btn {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+}
+
+.sc-btn-group {
+    vertical-align: middle;
+    display: inline-block;
+    clear: both;
+}
+
+.sc-btn {
+    float: left;
+    margin-right: 5px;
+}
+
+.user-info-bar .active {
+    color: #F2A1A1;
+}
+
+/*card*/
+.track-box-contain {
+    overflow-x: auto;
+}
+
+.content-track-box {
+    width: 200px;
+    height: 268px;
+    float: left;
+    margin: 21px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.track-link{
+    cursor: pointer;
+}
+
+.artist-link{
+    cursor: pointer;
+}
+
+.track-link:hover {
+    color: #9A9A9A;
+    font-size: 24px;
+}
+.artist-link:hover {
+    color: #9A9A9A;
 }

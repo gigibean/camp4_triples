@@ -1,26 +1,34 @@
-{% extends "base.html" %}
+{% extends "profilebase.html" %}
 {% block content %}
-<div class="main-div">
-    <div class="profile-images-div">
-        <!--        배경 이미지-->
-        <img src="../static/imgs/assets/profile-pic.png" style="width: inherit; height: 270px; position: absolute;"
-             class="background-img" id="background-img">
-        <!--        프로필 이미지-->
-        <div class="profile-img-box">
-            <img src="../static/imgs/assets/user-pic.png" style="position: relative; left: 5%; margin-top: 1rem;"
-             class="profile-img" id="profile-img">
-            <a class="edit-profile-img">Update Image</a>
-        </div>
-        <div class="content-wrap-box">
-            <div class="user-profile-text-box">
-                <div class="profile-header big-title">
-                    <h4>User name</h4>
-                </div>
-                <div class="profile-header">
-                    <p>description</p>
-                </div>
-            </div>
+
+<div class="track-box-contain">
+    {% for i in range %}
+    <div class="content-track-box card" id="profile-track-{{i}}">
+        <!--           TO DO: id play-btn 이 음악 재생을 위한 플레이 버튼-->
+        <img src="../static/imgs/assets/Play.svg" id="play-btn-track-profile-track-{{i}}" class="play-btn"
+             style="position: absolute;
+                            left: 32%; top: 23%; display: none; cursor: pointer">
+        <img src="../static/imgs/assets/music-pic.png" style="width:100%">
+        <div>
+            <a class="track-link"><h4><b>Music title</b></h4></a>
+            <a class="artist-link">Artist name</a>
         </div>
     </div>
+    {% endfor %}
 </div>
+
+
+<script>
+    $('.content-track-box').mouseover(function () {
+        var track_id = this.id;
+        console.log("in" + track_id);
+        $("#play-btn-track-" + track_id).show();
+    });
+    $('.content-track-box').mouseleave(function () {
+        var track_id = this.id;
+        console.log("out" + track_id);
+
+        $("#play-btn-track-" + track_id).hide();
+    });
+</script>
 {% endblock %}
