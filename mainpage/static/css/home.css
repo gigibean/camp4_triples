@@ -28,3 +28,10 @@
 .artist-link:hover {
     color: #9A9A9A;
 }
+
+.track-link, .artist-link {
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    word-break: normal;
+}

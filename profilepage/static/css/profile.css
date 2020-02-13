@@ -18,6 +18,7 @@ a:hover, a:visited {
     .profile-img {
         margin-top: 10% !important;
         width: 180px !important;
+        height: 180px !important;
     }
 
     .content-wrap-box {
@@ -184,19 +185,29 @@ p {
 
 .track-link {
     cursor: pointer;
+    padding-left: 3px;
 }
 
-.artist-link {
+.tag-each {
     cursor: pointer;
+    margin: 1px 2px;
+    display: inline-block;
+    padding: 1px;
 }
 
 .track-link:hover {
     color: #9A9A9A;
-    font-size: 24px;
 }
 
-.artist-link:hover {
+.tag-each:hover {
     color: #9A9A9A;
+}
+
+.track-link, .tag-link, .artist-link {
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    word-break: normal;
 }
 
 .sidebar-right {
@@ -241,7 +252,7 @@ p {
     font-size: 17px;
 }
 
-.number-info-title:visited {
+.number-info-title:visited, .sidebarheader-title:visited {
     text-decoration: none;
 }
 
@@ -272,7 +283,7 @@ p {
     color: #4f4f4f;
 }
 
-.number-info-link:hover {
+.number-info-link:hover, .sidebarheader-title:hover {
     color: #4f4f4f6b;
 }
 
@@ -291,6 +302,18 @@ p {
     background-image: url(../imgs/assets/Comment.svg);
 }
 
+.sc-icon-share {
+    background-image: url(../imgs/assets/share-btn.svg);
+    background-size: 29px 13px;
+    width: 29px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 8px;
+}
+
 .sidebarheader-icon {
     width: 21px;
     height: 24px;
@@ -305,6 +328,7 @@ p {
 .sidebarheader-title, .sidebarheader-more {
     line-height: 24px;
     font-size: 14px;
+    color: #4f4f4f;
 }
 
 
@@ -313,4 +337,138 @@ p {
     flex-direction: row;
     align-items: center;
     border-bottom: 1px solid #7070703d;
+}
+
+.sc-icon-play-count {
+    background-image: url(../imgs/assets/small-play-btn.png);
+    background-size: 13px 13px;
+}
+
+.sc-icon-track {
+    background-image: url(../imgs/assets/track-icon.svg);
+    background-size: 13px 13px;
+}
+
+.profile-track-icon {
+    width: 21px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.user-profile-img {
+    width: 200px;
+}
+
+.profile-user-pic-box {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.user-profile-link {
+    font-size: 15px;
+    vertical-align: center;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+.comment-day-box {
+    display: inline-block;
+    position: sticky;
+    left: 100%;
+    right: 0;
+    align-self: end;
+}
+
+.sidebar-likes-each-content {
+    width: 320px;
+    height: 55px;
+    margin: 15px 5px;
+    position: relative;
+}
+
+.sidebar-likes-text {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 1px;
+}
+
+.sl-text-box {
+    width: 240px;
+    display: inline-block;
+    margin: 0;
+}
+
+.sidebar-likes-hash {
+    display: inline-block;
+    position: sticky;
+    left: 100%;
+    right: 0;
+    align-self: end;
+    background: #4f4f4f3d;
+    border-radius: 30%;
+    padding: 0 5px;
+}
+
+.sl-artist {
+    display: contents !important;
+}
+
+.sidebar-likes-each-content a {
+    color: #333;
+}
+
+.sidebar-likes-each-content a:hover {
+    color: #9A9A9A;
+    text-decoration: none;
+}
+
+.sidebar-follower-each-content {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    margin: 0 -20px 0 0;
+    display: inline-block;
+}
+
+.sidebar-fi-pic {
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.fi-text-box {
+    width: 240px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+.sidebar-fi-text {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 1px;
+}
+
+.sc-icon-unfollow {
+    background-image: url(../imgs/assets/unfollow-btn.svg);
+    background-size: 55px 15px;
+    width: 56px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 8px;
+    position: sticky;
+    right: 0;
+    left: 90%;
+    margin-top: 10px;
 }
