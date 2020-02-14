@@ -28,3 +28,7 @@ def followers(request):
 
 def comments(request):
     return  render(request, 'comments.html', {'range': range(10), 'sl_range': range(3), 'sfw_range': range(8), 'sfi_range': range(3)})
+
+
+def track_detail(request):
+    return  render(request, 'track_detail.html', {'range': range(10), 'sl_range': range(3), 'sfw_range': range(8), 'sfi_range': range(3)})

@@ -30,6 +30,17 @@ a:hover {
     .main-div {
         width: 80% !important;
     }
+
+    .background-img {
+        width: initial !important;
+        height: 270px;
+    }
+}
+
+.background-img {
+    width: inherit;
+    height: 270px;
+    position: absolute;
 }
 
 .main-div {
