@@ -1,3 +1,26 @@
+/* 스크린 화면이 940 이하일 때 변화 */
+@media screen and (max-width: 940px) {
+    .upload-btn {
+        width: 350px !important;
+        height: 29px !important;
+        background-size: 350px !important;
+    }
+
+    .upload-text {
+        font-size: 23px !important;
+    }
+
+    .two-side-wrapper {
+        grid-template-rows: 30% 70% !important;
+        grid-template-columns: 100% !important;
+    }
+
+    .two-side-wrapper div {
+        margin: 30px 10px;
+        padding: 10px;
+    }
+}
+
 /* file upload bar*/
 .g-tabs {
     color: #F2A1A1;
@@ -12,13 +35,7 @@
     float: left;
 }
 
-.upload-btn {
-    display: inline-block;
-    vertical-align: top;
-    background-repeat: no-repeat;
-    background-position: 50%;
-}
-
+/* upload button */
 .span-icons {
     display: inline-block;
     vertical-align: top;
@@ -32,8 +49,65 @@
     background-size: 547px;
 }
 
+
+/* upload post 시 사진을 올리면 그 사진이 정사각형으로 보이도록 */
 .post-pic-upload-btn {
     width: 310px;
     height: 310px;
     background-size: 310px;
+}
+
+
+/* file upload 시 위에 보이는 글씨*/
+.upload-text {
+    font-size: 35px;
+    display: inline-block;
+}
+
+/* gird */
+.two-side-wrapper {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 70%;
+}
+
+/* forms */
+.grid-one {
+    margin: 25px 0;
+}
+
+.grid-two label {
+    width: 90px;
+    margin: 0 3px;
+    vertical-align: top;
+}
+
+.grid-two div {
+    margin: 25px 5px;
+}
+
+.grid-two {
+    margin: 0 15px;
+}
+
+.grid-two > div > input, .grid-two > div > textarea, .grid-two:not(.genre), .grid-two:not(.file-upload-submit) {
+    width: 100% !important;
+}
+.grid-two > div > input, .grid-two > div > textarea, .grid-two:not(.file-upload-submit) {
+    border-radius: 8px;
+    border-color: #9a9a9a61;
+    border-width: thin;
+}
+.grid-two > div > .genre {
+    width: 50% !important;
+}
+
+.grid-two input[type=submit] {
+    left: 100%;
+    right: 0;
+    width: 65px;
+    height: 29px;
+    background-size: 65px 29px;
+    border: none;
+    float: right;
 }
