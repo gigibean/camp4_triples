@@ -1,0 +1,13 @@
+/* file upload bar*/
+.g-tabs {
+    color: #F2A1A1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.vertical-bar-ul li {
+    padding-top: 14px 10px;
+    float: left;
+}

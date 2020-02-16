@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block url %}
+<link href="{% static '/css/profile.css' %}" rel="stylesheet"/>
+<link href="{% static '/css/upload.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+<div class="main-div">
+    <h1 class="header-name">Upload</h1>
+    <div class="vertical-bar">
+        <div class="user-info-bar">
+            <ul class="vertical-bar-ul">
+                <li>
+                    {% block filemiddlename %} {% endblock %}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    {% block fileuploadcontent %}
+    {% endblock %}
+</div>
+{% endblock %}

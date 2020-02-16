@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainpage.apps.MainpageConfig',
     'profilepage.apps.ProfilepageConfig',
+    'uploadpage.apps.UploadpageConfig',
 ]
 
 MIDDLEWARE = [

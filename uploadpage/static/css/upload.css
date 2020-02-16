@@ -1,0 +1,39 @@
+/* file upload bar*/
+.g-tabs {
+    color: #F2A1A1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.vertical-bar-ul li {
+    padding-top: 14px 10px;
+    float: left;
+}
+
+.upload-btn {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.span-icons {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.upload-btn {
+    width: 547px;
+    height: 44px;
+    background-size: 547px;
+}
+
+.post-pic-upload-btn {
+    width: 310px;
+    height: 310px;
+    background-size: 310px;
+}

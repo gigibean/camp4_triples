@@ -1,0 +1,37 @@
+{% extends "uploadbase.html" %}
+{% block filemiddlename %}<p class="g-tabs">Track info</p>{% endblock %}
+{% block fileuploadcontent %}
+<div>
+    <form>
+        <div>
+            <span style="background-image: url(/static/imgs/assets/music-pic.png);" class="span-icons post-pic-upload-btn"></span>
+<!--            파일 업로드 input-->
+        </div>
+        <div>
+            <div>
+                <label>Title<span style="color: #F2A1A1;">*</span></label>
+                <input type="text" name="title">
+            </div>
+            <div>
+                <label>Genre</label>
+                <input list="genre" name="genre">
+                <datalist id="genre">
+                    <option value="one">
+                    <option value="two">
+                    <option value="three">
+                    <option value="four">
+                    <option value="five">
+                </datalist>
+            </div>
+            <div>
+                <label>Additional tags</label>
+                <input type="text" name="tags">
+            </div>
+            <div>
+                <label>Description</label>
+                <textarea name="description" rows="10" cols="50"></textarea>
+            </div>
+        <input type="submit">
+    </form>
+</div>
+{% endblock %}

@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
+
+    {% block url %}
+<link href="{% static '/css/home.css' %}" rel="stylesheet"/>
+{% endblock %}
 {% block content %}
 <div class="main-div">
     <!--    chart top 5-->

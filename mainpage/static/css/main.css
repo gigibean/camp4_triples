@@ -28,12 +28,28 @@ a:hover {
     }
 
     .main-div {
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .background-img {
         width: initial !important;
         height: 270px;
+    }
+
+    .profile-images-div, .fluid {
+        width: 100% !important;
+    }
+
+    .sidebar-right {
+        display: none !important;
+    }
+
+    .content-wrap-box {
+        padding: 0;
+    }
+
+    #search-bar-input {
+        width: 320px !important;
     }
 }
 

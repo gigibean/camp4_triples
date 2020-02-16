@@ -22,10 +22,6 @@ a:hover, a:visited {
         width: 180px !important;
         height: 180px !important;
     }
-
-    .profile-images-div, .fluid {
-        width: 200% !important;
-    }
 }
 
 .content-wrap-box {
@@ -476,7 +472,6 @@ p {
 }
 
 #comment-input {
-    width: 600px;
     height: 35px;
     background: transparent;
     border-top: none;
